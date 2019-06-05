@@ -219,9 +219,9 @@ anyway.
 
 So we need a way of actually debugging the firmware on-chip. Fortunately the ESP32
 supports
-`JTAG debugging<https://blog.senr.io/blog/jtag-explained>`_
+`JTAG debugging <https://blog.senr.io/blog/jtag-explained>`_
 The
-`setup process<https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/jtag-debugging/>`_
+`setup process <https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/jtag-debugging/>`_
 is explained in detail in the ESP32 docs.
 The biggest problem with JTAG debugging is, that your board layout has to support it
 and that certain pins on the SoC become occupied by the debugger.
@@ -230,7 +230,7 @@ this specific board you would need to create a custom board with JTAG debugging 
 and the same components the WiFi Kit 32 uses.
 
 We will demonstrate the process of JTAG debugging using the
-`ESP Wrover Kit 4.1<https://docs.espressif.com/projects/esp-idf/en/latest/get-started/get-started-wrover-kit.html>`_
+`ESP Wrover Kit 4.1 <https://docs.espressif.com/projects/esp-idf/en/latest/get-started/get-started-wrover-kit.html>`_
 manufactured by Espressif.
 
 .. image:: img/wrover-4.jpg
@@ -248,9 +248,9 @@ First of all make sure the highlighted jumpers on the back of the board are set 
 .. image:: img/wrover-4-back.jpg
 
 The actual debugging is done via
-`OpenOCD<http://openocd.org/>`_.
+`OpenOCD <http://openocd.org/>`_.
 Will need to install the
-`ESP32 specific version of OpenOCD<https://github.com/espressif/openocd-esp32/releases>`_.
+`ESP32 specific version of OpenOCD <https://github.com/espressif/openocd-esp32/releases>`_.
 Make sure you set the
 ``OPENOCD_SCRIPTS`` environmant variable to
 
@@ -278,7 +278,7 @@ To start the debug server run:
 .. note:: On the virtual machine there is a pre-defined alias ``start-jtag`` for the command above.
 
 OpenOCD will start a debug server that can be accessed be the
-`GDB debugger frontend<https://www.gnu.org/software/gdb/>`_
+`GDB debugger frontend <https://www.gnu.org/software/gdb/>`_
 debugger frontend
 
 Go to the simple debugging sample project:
@@ -345,7 +345,7 @@ Inside any ESP32 project, place this snippet in a
 
 .. code::
 
-    <project root>/.vscode/launch.json
+     <project root>/.vscode/launch.json
 
 file. Just make sure you replace the ``build/debug-sample.elf`` with your
 executable name: ``build/<project name>.elf``
