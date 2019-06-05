@@ -91,6 +91,7 @@ Build the backend
 Start the backend
 
 .. code:: bash
+
     $ ./iot-backend
 
 This will start a backend serving the app specific endpoints on port ``:3000`` and
@@ -105,16 +106,19 @@ machine the alias ``idf`` can be used.
 Go to the ``~/code/firmware`` directory:
 
 .. code:: bash
+
     $ cd ~/code/firmware
 
 Start the menuconfig config editor:
 
 .. code:: bash
+
     $ idf menuconfig
 
 Make sure the entry
 
 .. code::
+
     Component config -> ESP32-specific -> Main XTAL frequency
 
 is set to 26MHz:
@@ -128,6 +132,7 @@ is set to 26MHz:
 You will also have to set up the WiFi and backend address config in
 
 .. cdoe::
+
     Component config -> smartscreen
 
 * set the SSID and password of the WiFi network you want to use
@@ -140,6 +145,7 @@ You will also have to set up the WiFi and backend address config in
 You can determine the IP address using ``ifconfig``:
 
 .. code:: bash
+
     $ ifconfig
 
 .. image:: img/determine-ip.png
@@ -147,16 +153,19 @@ You can determine the IP address using ``ifconfig``:
 Compile the code:
 
 .. code:: bash
+
     $ idf build
 
 Flash the device with your firmware:
 
 .. code:: bash
+
     $ idf flash
 
 To view the log output:
 
 .. code:: bash
+
     $ idf monitor
 
 Step 3: Bundling and Building the App
@@ -165,21 +174,25 @@ Step 3: Bundling and Building the App
 Go to the ``~/code/app`` directory:
 
 .. code:: bash
+
     $ cd ~/code/app
 
 Install all dependencies:
 
 .. code:: bash
+
     $ npm i
 
 Start the app dev server:
 
 .. code:: bash
+
     $ npm start
 
 Now open a browser and launch the app by opening
 
 .. code::
+
     http://localhost:8080
 
 .. image:: img/app-and-backend.png
