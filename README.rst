@@ -13,7 +13,7 @@ Setting up the virtual machine
 
 Download the virtual machine image from 
 
-`<https://drive.google.com/file/d/1Nnj282Mw2e3J-T9aMRZox5r36YlDWPKb/view?usp=sharing>`_
+`<link>`_
 
 The code on the machine was written for the 
 `Heltec WiFi Kit 32<https://heltec.org/project/wifi-kit-32/>`
