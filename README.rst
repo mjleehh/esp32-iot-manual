@@ -26,10 +26,10 @@ For communication between the virtual machine and the device ensure the followin
 settings:
 * the UART controller connected to the virtual machine
 
-..image:: img/virtualbox-uart.png
+.. image:: img/virtualbox-uart.png
     :width: 300
 
 * give the virtual machine its own IP on the network through a bridged network adapter
         
-..image:: img/virtualbox-bridged-network-adapter.png
+.. image:: img/virtualbox-bridged-network-adapter.png
     :width: 300
