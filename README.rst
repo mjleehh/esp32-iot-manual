@@ -136,7 +136,7 @@ is set to 26MHz:
 
 You will also have to set up the WiFi and backend address config in
 
-.. cdoe::
+.. code::
 
     Component config -> smartscreen
 
@@ -355,6 +355,7 @@ conveience of common debugger UIs:
 
 .. image:: img/debugger-ui.png
 
+
 Further Reading
 ###############
 
@@ -426,7 +427,7 @@ Go also comes with efficient concurrency:
 * there is a special ``go`` keyword for async execution
 * there is s special ``chan`` data type for inter-thread communication
 
-The example also uses the `Go modules <https://blog.golang.org/using-go-modules}
+The example also uses the `Go modules <https://blog.golang.org/using-go-modules>`_
 feature, which improves the build in package management of the Go language.
 
 The HTTP REST backend framework used is
@@ -434,13 +435,13 @@ The HTTP REST backend framework used is
 Gin is an easy to use fast framework, in which HTTP enpoints are defined in a
 programmatic manner like many NodeJS frameworks (
 `Express <https://expressjs.com/>`_ and
-`Koa <https://koajs.com/} for example>`_).
+`Koa <https://koajs.com/>`_ for example).
 
 For simplicity the example does not feature a database storage. Go has many well
 designed libraries for database persistence. Using either a document database like
-`Mongo DB <https://www.mongodb.com/>`_}
+`Mongo DB <https://www.mongodb.com/>`_
 through
-`official driver <https://github.com/mongodb/mongo-go-driver}
+`official driver <https://github.com/mongodb/mongo-go-driver>`_
 or a modern relational database like
 `PostgreSQL <https://www.postgresql.org/>`_
 through libraries like
