@@ -20,16 +20,55 @@ The code on the machine was written for the
 
 .. image:: img/helltec-wifi-kit.jpg
     :align: center
-    :width: 200
+    :width: 150
 
 For communication between the virtual machine and the device ensure the following two
 settings:
+
 * the UART controller connected to the virtual machine
 
 .. image:: img/virtualbox-uart.png
-    :width: 300
+    ":align: center
+    :width: 200
 
 * give the virtual machine its own IP on the network through a bridged network adapter
         
 .. image:: img/virtualbox-bridged-network-adapter.png
+    :align: center
+    :width: 200
+
+Running the Example
+###################
+
+What it does
+------------
+
+The central idea of the example is to have smart screens that display a message which we can
+remotely be altered through an app, without physical access to the devices.
+
+.. image:: img/things.jpg
+    :align: center
     :width: 300
+
+What we technically demonstrate is typical IoT 3 actor communication:
+
+* up to three devices (``smartscreen-1, smartscreen-2, smartscreen-3``)
+* a central backend
+* an app for the user to control the devices
+
+..image:: img/communication-triangle.png
+    :align: center
+    :width: 150
+
+The following communication flow occurs:
+
+* the backend has a list of known devices
+* the backend tracks the last known IP address of each device
+* when a device boots up, after connecting to the WiFi it will notify the backend of its status
+* when the app loads it receives the device list from the backend
+* if the app wishes to change the message on one of the screens it sends a request to the backend
+* requests to change the message will be forwarded by the backend to the specific device via the
+last known IP of that device
+
+The educational focus of the example is not a set of best practices or libraries, but to
+give an idea of where to get started with IoT.
