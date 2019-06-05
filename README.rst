@@ -8,6 +8,9 @@ Internet of Things Workshop Manual
 | June 2019
 
 
+Contents
+########
+
 .. contents::
 
 Setting up the virtual machine
@@ -18,7 +21,7 @@ Download the virtual machine image from
 `<link>`_
 
 The code on the machine was written for the 
-`Heltec WiFi Kit 32<https://heltec.org/project/wifi-kit-32/>`
+`Heltec WiFi Kit 32 <https://heltec.org/project/wifi-kit-32/>`_
 
 .. image:: img/helltec-wifi-kit.jpg
     :align: center
