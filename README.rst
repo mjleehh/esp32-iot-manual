@@ -28,7 +28,7 @@ settings:
 * the UART controller connected to the virtual machine
 
 .. image:: img/virtualbox-uart.png
-    ":align: center
+    :align: center
     :width: 200
 
 * give the virtual machine its own IP on the network through a bridged network adapter
@@ -72,3 +72,26 @@ last known IP of that device
 
 The educational focus of the example is not a set of best practices or libraries, but to
 give an idea of where to get started with IoT.
+
+Step 1: Startting the backend
+-----------------------------
+
+Go to the ``~/code/backend`` directory:
+
+.. code:: bash
+
+    cd ~/code/backend
+
+Build the backend
+
+.. code:: bash
+
+    $ go build
+
+Start the backend
+
+.. code:: bash
+    $ ./iot-backend
+
+This will start a backend serving the app specific endpoints on port ``:3000`` and
+the device specific endpoints on port ``:3001``
