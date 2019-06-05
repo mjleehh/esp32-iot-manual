@@ -8,6 +8,8 @@ Internet of Things Workshop Manual
 | June 2019
 
 
+.. contents::
+
 Setting up the virtual machine
 ##############################
 
